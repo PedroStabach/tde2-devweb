@@ -17,3 +17,15 @@ function divisao(a, b) {
     }
     return a / b;
 }
+
+//CONSTANTES
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const filtrarPares = function(array) {
+    return array.filter(num => num % 2 === 0); // arrow function dentro
+};
+
+const calcularMedia = function(array) {
+    const soma = array.reduce((acc, num) => acc + num, 0); // arrow function dentro
+    return soma / array.length;
+};
